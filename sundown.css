@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(66, 113, 240);
+    position: relative;
+}
+nav{
+    height: 2vw 3vw;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    height: 70px;
+    width: auto;
+    border-radius: 20px;
+}
+#nav-menu{
+    display: flex;
+    gap: 1vw;
+}
+#nav-menu h4{
+    padding: 10px 20px;
+}
+#center{
+    height: 65vh;
+    width: 100%;
+    background-color: darkslateblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#left h3{
+    width: 30vw;
+    font-size: 2vw;
+}
+#right h1{
+    font-size: 8vw;
+}
+#hero-shape{
+    position: absolute;
+    width: 50vw;
+    height: 40vw;
+    right: 0;
+    top: 65vh;
+    filter: blur(25px);
+}
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+}
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime-2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime-1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime-1 {
+    from{
+        transform: translate(-10%,10%);
+    }
+    to{
+        transform: translate(10%,-10%);
+    }
+}
+
+@keyframes anime-2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,30%);
+    }
+}
