@@ -84,14 +84,28 @@ nav {
   display: none;
   color: #fff;
 }
-#page-12{
-    height: 100px;
-    position: relative;
+#page-1{
+  background-color: white;
 }
-#page-12 img{
+#page-12{
+    height: 50vh;
+    position: relative;
+    background-color: transparent;
+}
+#page-12 h1{
+  color: #fff;
+  font-size: 5vw;
+  text-align: center;
+}
+#top-bg{
+  background-color: red;
+  z-index: 10;
+}
+#top-bg img{
     width: 100%;
     height: auto;
     position: absolute;
+    z-index: -1;
 }
 /* ======================= Responsive Code ============================== */
 @media (max-width: 500px) {
