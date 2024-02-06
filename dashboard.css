@@ -1,0 +1,130 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#page-12 {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6vw 2vw;
+}
+#create-api {
+  background-color: blueviolet;
+  max-width: fit-content;
+  padding: 0.7vw 1vw;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#create-api:hover {
+  background-color: rgb(122, 33, 205);
+}
+#create-api a {
+  color: #fff;
+  text-decoration: none;
+}
+/* #search {
+  background-color: blue;
+} */
+#search input {
+  width: max-content;
+  padding: 0.7vw 1vw;
+  /* outline: none;
+  border: none; */
+  border-radius: 20px;
+  font-size: 1.1vw;
+}
+.animation-ball1 {
+  background-color: green;
+  border-radius: 40%;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: -9;
+  animation-name: Animation_Ball;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  position: absolute;
+}
+.animation-ball2 {
+  background-color: green;
+  border-radius: 40%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 150px;
+  left: 900px;
+  z-index: -9;
+  animation-name: Animation_Ball;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  position: absolute;
+}
+@keyframes Animation_Ball {
+  to {
+    transform: rotate(300deg);
+  }
+}
+#container {
+  display: grid;
+  background-color: #807a7a7a;
+  padding: 3vw 3vw;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2vw 4vw;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* background-image: url("https://www.solidbackgrounds.com/download/2560x1440-blue-abstract-noise-free-website-background-image.jpg"); */
+  /* filter: blur(1px); */
+  /* z-index: -9; */
+}
+.rows {
+  display: flex;
+  margin: 0;
+}
+.cards {
+  background-color: #fff;
+  padding: 1vw;
+  margin: 0 1vw;
+  margin-bottom: 2vw;
+  width: 25vw;
+  height: 12vw;
+  border-radius: 10px;
+  cursor: pointer;
+  /* z-index: 99; */
+}
+@media (max-width: 500px) {
+  #create-api {
+    padding: 2vw 3vw;
+  }
+  #create-api a {
+    font-size: 3vw;
+  }
+  #search input {
+    width: max-content;
+    padding: 1.5vw 1.5vw;
+    border-radius: 20px;
+    font-size: 3vw;
+    background-color: rgb(215, 231, 235);
+  }
+  #container {
+    padding: 7vw;
+  }
+  .rows {
+    display: block;
+  }
+  .cards {
+    display: block;
+    width: 75vw;
+    height: 30vw;
+    margin: 0 8vw;
+    margin-bottom: 8vw;
+  }
+}
