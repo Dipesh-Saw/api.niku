@@ -2,6 +2,13 @@ body {
   padding: 0;
   margin: 0;
 }
+#main {
+  background-image: url("https://images.saymedia-content.com/.image/t_share/MTkzODAzNTgyODUxMDY1MzI4/cool-css-backgrounds.jpg");
+  background-repeat: repeat-y;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+}
 #page-12 {
   /* background-color: blue; */
   display: flex;
@@ -10,12 +17,15 @@ body {
   padding: 0.6vw 2vw;
 }
 #create-api {
+  display: flex;
+  align-items: center;
   background-color: blueviolet;
   max-width: fit-content;
   padding: 0.7vw 1vw;
   margin: 10px;
   border-radius: 20px;
   cursor: pointer;
+  z-index: 99;
 }
 #create-api:hover {
   background-color: rgb(122, 33, 205);
@@ -30,66 +40,114 @@ body {
 #search input {
   width: max-content;
   padding: 0.7vw 1vw;
-  /* outline: none;
-  border: none; */
+  outline: none;
+  border: none;
   border-radius: 20px;
   font-size: 1.1vw;
 }
 .animation-ball1 {
   background-color: green;
-  border-radius: 40%;
-  height: 300px;
-  width: 300px;
+  border-radius: 20px;
+  height: 1000px;
+  width: 200px;
   position: absolute;
-  top: 50px;
-  left: 10px;
-  z-index: -9;
-  animation-name: Animation_Ball;
+  top: 10vw;
+  left: 50vw;
+  z-index: 0;
+  border: none;
+  animation-name: Animation_Ball1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
   position: absolute;
+}
+@keyframes Animation_Ball1 {
+  100% {
+    transform: rotate(180deg);
+  }
 }
 .animation-ball2 {
   background-color: green;
-  border-radius: 40%;
+  border-radius: 50%;
   height: 200px;
   width: 200px;
   position: absolute;
-  top: 150px;
-  left: 900px;
-  z-index: -9;
-  animation-name: Animation_Ball;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-  position: absolute;
+  top: 5vw;
+  left: 2vw;
+  z-index: 0;
 }
-@keyframes Animation_Ball {
+
+#hero-shape {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  left: 15vw;
+  top: 13vw;
+  /* filter: blur(5px); */
+}
+
+#hero-2 {
+  height: 30vw;
+  width: 30vw;
+  background-color: orangered;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: anime-2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+#hero-3 {
+  height: 30vw;
+  width: 30vw;
+  background-color: orangered;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: anime-1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime-1 {
+  from {
+    transform: translate(-10%, 10%);
+  }
   to {
-    transform: rotate(300deg);
+    transform: translate(10%, -10%);
+  }
+}
+
+@keyframes anime-2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-20%, 30%);
   }
 }
 #container {
   display: grid;
-  background-color: #807a7a7a;
+  background-color: rgba(235, 235, 235, 0.2);
   padding: 3vw 3vw;
   align-items: center;
   justify-content: space-around;
   margin: 2vw 4vw;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  /* background-image: url("https://www.solidbackgrounds.com/download/2560x1440-blue-abstract-noise-free-website-background-image.jpg"); */
-  /* filter: blur(1px); */
-  /* z-index: -9; */
+  backdrop-filter: blur(15px);
 }
 .rows {
   display: flex;
   margin: 0;
 }
 .cards {
+  display: flex;
+  align-items: center;
+  z-index: 99;
   background-color: #fff;
   padding: 1vw;
   margin: 0 1vw;
@@ -100,7 +158,57 @@ body {
   cursor: pointer;
   /* z-index: 99; */
 }
+.card-content {
+  margin: 1vw;
+  width: 100%;
+}
+.app-name {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+.api-name {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+.api-key {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+.copy-btn:hover {
+  color: #000000b7;
+}
+
+@media (max-width: 1000px) {
+  .animation-ball1 {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
+  #hero-shape {
+    position: absolute;
+    left: 40vw;
+    top: 35vw;
+  }
+  #hero-2 {
+    height: 70vw;
+    width: 50vw;
+  }
+  #hero-3 {
+    height: 70vw;
+    width: 60vw;
+  }
+  .animation-ball2 {
+    height: 35vw;
+    width: 35vw;
+  }
+  #main {
+    background-image: url("https://images.saymedia-content.com/.image/t_share/MTkzODAzNTgyODUxMDY1MzI4/cool-css-backgrounds.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% 30%;
+  }
   #create-api {
     padding: 2vw 3vw;
   }
@@ -121,10 +229,23 @@ body {
     display: block;
   }
   .cards {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 75vw;
     height: 30vw;
     margin: 0 8vw;
     margin-bottom: 8vw;
+  }
+  .app-name {
+    margin: 1vw 2vw;
+    font-size: 3.5vw;
+  }
+  .api-name {
+    margin: 2vw 2vw;
+    font-size: 3.5vw;
+  }
+  .api-key {
+    margin: 1vw 2vw;
+    font-size: 3.5vw;
   }
 }
