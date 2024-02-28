@@ -162,9 +162,10 @@
   background-color: #fff7f7;
 }
 
-/* #page-4 {
-  background-color: red;
-} */
+#page-4 {
+  /* background-color: red; */
+  padding: 3vw 0;
+}
 #page-4-head {
   text-align: center;
   font-size: 2vw;
@@ -179,9 +180,14 @@
 }
 .product {
   background-color: rgb(226, 190, 255);
-  margin: 1vw;
+  /* margin: 1vw; */
   padding: 1vw;
   border-radius: 5px;
+}
+.product:hover {
+  transform: translateY(-1vw);
+  transition: 0.5s;
+  box-shadow: 0 5px 3px black;
 }
 .product-image {
   padding: 1vw;
@@ -193,32 +199,122 @@
   font-size: 1.5vw;
   text-align: center;
 }
-#page-5{
-  background-color: red;
+#page-5 {
+  background-image: linear-gradient(
+    to right,
+    rgb(181, 74, 238),
+    rgb(248, 231, 255)
+  );
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 2vw 0;
 }
-#page-5-left{
+#page-5-left {
   align-items: center;
   padding: 2vw;
 }
-#page-5-left img{
+#page-5-left img {
   border-radius: 10px;
+  width: 30vw;
 }
-#page-5-right{
+#page-5-right {
   padding: 0 4vw;
   width: 35%;
 }
-#page-5-head{
+#page-5-head {
   padding: 2vw 0;
 }
-#page-5-btn{
+#page-5-btn {
   margin: 2vw 0;
 }
-#page-5-btn button{
+#page-5-btn button {
   padding: 0.8vw 1.5vw;
   border-radius: 40px;
   outline: none;
   border: none;
+}
+#page-6 {
+  padding: 3vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#page-6-left {
+  width: 40%;
+}
+#page-6-left img {
+  width: 30vw;
+}
+#page-6-right {
+  width: 40%;
+  /* background-color: red; */
+}
+#page-6-head {
+  /* background-color: blue; */
+  text-align: center;
+  font-size: 3vw;
+}
+#page-6-head h1 {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#form-top {
+  /* display: flex; */
+  justify-content: space-between;
+  padding: 2vw;
+}
+:root {
+  --bg: #ecececea;
+}
+#form-name {
+  display: flex;
+  align-items: center;
+  margin: 1vw 0;
+  padding: 0.5vw 1vw;
+  border-radius: 20px;
+  background-color: var(--bg);
+}
+#form-email {
+  display: flex;
+  align-items: center;
+  margin: 1vw 0;
+  padding: 0.5vw 1vw;
+  border-radius: 20px;
+  background-color: var(--bg);
+}
+#form-query {
+  display: flex;
+  align-items: center;
+  margin: 1vw 0;
+}
+#form-name input {
+  height: 3vw;
+  width: 100%;
+  padding: 0 0.4vw;
+  font-size: 1.4vw;
+  outline: none;
+  border: none;
+  background-color: var(--bg);
+}
+#form-email input {
+  height: 3vw;
+  width: 100%;
+  padding: 0 0.4vw;
+  font-size: 1.4vw;
+  outline: none;
+  border: none;
+  background-color: var(--bg);
+}
+#form-query textarea {
+  height: 10vw;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.4vw;
+  padding: 1vw;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--bg);
 }
