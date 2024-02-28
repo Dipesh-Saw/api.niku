@@ -193,3 +193,32 @@
   font-size: 1.5vw;
   text-align: center;
 }
+#page-5{
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#page-5-left{
+  align-items: center;
+  padding: 2vw;
+}
+#page-5-left img{
+  border-radius: 10px;
+}
+#page-5-right{
+  padding: 0 4vw;
+  width: 35%;
+}
+#page-5-head{
+  padding: 2vw 0;
+}
+#page-5-btn{
+  margin: 2vw 0;
+}
+#page-5-btn button{
+  padding: 0.8vw 1.5vw;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
