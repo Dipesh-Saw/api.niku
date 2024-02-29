@@ -121,6 +121,7 @@
 }
 #page-3-desc {
   padding: 1vw 2vw;
+  font-size: 1.3vw;
 }
 #page-3-btns {
   display: flex;
@@ -150,7 +151,7 @@
   background-color: blueviolet;
 }
 #app_download:hover {
-  background-color: rgb(171, 80, 255);
+  background-color: rgb(116, 53, 175);
 }
 #app_download a {
   color: white;
@@ -160,7 +161,7 @@
   color: blueviolet;
 }
 #app_info:hover {
-  background-color: #fff7f7;
+  background-color: #f8f3f3;
 }
 
 #page-4 {
@@ -337,7 +338,6 @@
 
 @media (max-width: 500px) {
   #page-1-1 {
-    background-color: red;
     display: block;
   }
   #page-1-1-left {
@@ -360,7 +360,6 @@
     padding: 10vw;
   }
   #page-2 {
-    background-color: blue;
     padding-bottom: 4vw;
   }
   #page-2-1 {
@@ -375,7 +374,7 @@
     justify-content: center;
   }
   #page-2-desc {
-    font-size: 3vw;
+    font-size: 3.5vw;
     text-align: center;
     display: flex;
     align-items: center;
@@ -383,7 +382,6 @@
     width: 100%;
   }
   #page-2-2 {
-    background-color: aqua;
     display: block;
     padding: 10vw 5vw;
   }
@@ -403,13 +401,15 @@
     /* background-color: blue; */
     margin: 1vw 0;
     color: black;
+    font-size: 3.5vw;
   }
   .card-desc {
     color: black;
     text-align: center;
+    font-size: 3vw;
+    padding: 0 5vw;
   }
   #page-3 {
-    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -432,11 +432,12 @@
   }
   #page-3-head {
     font-size: 4vw;
-    text-align: center;
-    padding: 2vw 0;
+    text-align: left;
+    padding: 2vw;
   }
   #page-3-desc {
     padding: 1vw 2vw;
+    font-size: 3vw;
   }
   #page-3-btns {
     display: flex;
@@ -460,7 +461,7 @@
     box-shadow: 2px 2px 5px grey;
   }
   #page-4 {
-    padding: 3vw 0;
+    padding: 5vw 0;
   }
   #page-4-head {
     text-align: center;
@@ -574,7 +575,7 @@
     font-size: 1.4vw;
     color: #fff;
     padding: 1vw;
-    width: 90%;
+    width: 98%;
   }
   #footer a {
     color: #fff;
