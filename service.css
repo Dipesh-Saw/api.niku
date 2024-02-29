@@ -479,6 +479,8 @@
     /* margin: 1vw; */
     padding: 1vw;
     border-radius: 5px;
+    width: 15vw;
+    height: 20vw;
   }
   .product:hover {
     transform: translateY(-1vw);
@@ -521,6 +523,10 @@
   }
   #page-5-head {
     padding: 2vw 0;
+    font-size: 4vw;
+  }
+  #page-5-desc{
+    font-size: 4vw;
   }
   #page-5-btn {
     margin: 7vw 0;
