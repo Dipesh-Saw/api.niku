@@ -21,13 +21,16 @@
   width: 50%;
   padding-left: 5vw;
 }
-#page-1-1-right {
-  width: 50%;
+#left-heading {
+  width: max-content;
 }
 #page-1-1 h1 {
   font-size: 4vw;
 }
 #left-desc {
+  width: 50%;
+}
+#page-1-1-right {
   width: 50%;
 }
 #page-1-right img {
@@ -100,7 +103,6 @@
   /* background-color: red; */
   padding: 2vw;
   border-radius: 20px;
-  /* border: 2px solid black; */
 }
 #page-3-right {
   /* background-color: blue; */
@@ -141,7 +143,6 @@
   cursor: pointer;
   box-shadow: 2px 2px 5px grey;
 }
-
 #page-3-btns button a {
   text-decoration: none;
 }
@@ -330,4 +331,253 @@
 #footer a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Responsive Code Starts from Here  */
+
+@media (max-width: 500px) {
+  #page-1-1 {
+    background-color: red;
+    display: block;
+  }
+  #page-1-1-left {
+    width: 90%;
+    padding-left: 5vw;
+  }
+  #page-1-1 h1 {
+    font-size: 10vw;
+  }
+  #left-desc {
+    width: 90%;
+  }
+  #page-1-1-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #page-1-right img {
+    width: 80vw;
+    padding: 10vw;
+  }
+  #page-2 {
+    background-color: blue;
+    padding-bottom: 4vw;
+  }
+  #page-2-1 {
+    padding: 3vw 20vw;
+    margin: 0;
+  }
+  #page-2-heading {
+    text-align: center;
+    font-size: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #page-2-desc {
+    font-size: 3vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #page-2-2 {
+    background-color: aqua;
+    display: block;
+    padding: 10vw 5vw;
+  }
+  .cards {
+    text-align: center;
+    margin: 5vw;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 2vw;
+  }
+  .card-image img {
+    width: 30vw;
+    padding: 5vw;
+    border-radius: 40px;
+  }
+  .card-head {
+    /* background-color: blue; */
+    margin: 1vw 0;
+    color: black;
+  }
+  .card-desc {
+    color: black;
+    text-align: center;
+  }
+  #page-3 {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #page-3-left {
+    border-radius: 10px;
+    margin: 1vw;
+    padding: 1vw;
+  }
+  #page-3-left img {
+    height: 50vw;
+    padding: 2vw;
+    border-radius: 20px;
+  }
+  #page-3-right {
+    display: flex;
+    margin: 1vw;
+    padding: 1vw;
+    width: 55%;
+  }
+  #page-3-head {
+    font-size: 4vw;
+    text-align: center;
+    padding: 2vw 0;
+  }
+  #page-3-desc {
+    padding: 1vw 2vw;
+  }
+  #page-3-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vw;
+    padding: 1vw;
+  }
+  #page-3-btns button {
+    padding: 3vw 1.5vw;
+    /* height: 7vw; */
+    /* width: 8vw; */
+    width: auto;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px grey;
+  }
+  #page-4 {
+    padding: 3vw 0;
+  }
+  #page-4-head {
+    text-align: center;
+    font-size: 3.5vw;
+    padding: 2vw;
+  }
+  #page-4-card-section {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .product {
+    background-color: rgb(226, 190, 255);
+    /* margin: 1vw; */
+    padding: 1vw;
+    border-radius: 5px;
+  }
+  .product:hover {
+    transform: translateY(-1vw);
+    transition: 0.5s;
+    box-shadow: 0 5px 3px black;
+  }
+  .product-image {
+    padding: 1vw;
+    margin: 1vw;
+  }
+  .product-image img {
+    width: 10vw;
+  }
+  .product-name {
+    font-size: 2.3vw;
+    text-align: center;
+  }
+  #page-5 {
+    background-image: linear-gradient(
+      to right,
+      rgb(181, 74, 238),
+      rgb(248, 231, 255)
+    );
+    display: block;
+    align-items: center;
+    padding: 2vw 0;
+  }
+  #page-5-left {
+    align-items: center;
+    padding: 2vw;
+    text-align: center;
+  }
+  #page-5-left img {
+    border-radius: 10px;
+    width: 60vw;
+  }
+  #page-5-right {
+    padding: 5vw;
+    width: 90%;
+  }
+  #page-5-head {
+    padding: 2vw 0;
+  }
+  #page-5-btn {
+    margin: 7vw 0;
+  }
+  #page-5-btn button {
+    padding: 2.5vw 2.5vw;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+  }
+  #page-6 {
+    padding: 3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #page-6-left {
+    width: 40%;
+  }
+  #page-6-left img {
+    width: 40vw;
+  }
+  #page-6-right {
+    width: 40%;
+    /* background-color: red; */
+  }
+  #page-6-head {
+    /* background-color: blue; */
+    text-align: center;
+    font-size: 3vw;
+  }
+  #page-6-head h1 {
+    /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  #form-top {
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 2vw;
+  }
+  :root {
+    --bg: #ecececea;
+  }
+  #form-query textarea {
+    border-radius: 5px;
+  }
+  #footer {
+    background-color: rgb(142, 72, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4vw;
+    color: #fff;
+    padding: 1vw;
+    width: 90%;
+  }
+  #footer a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
