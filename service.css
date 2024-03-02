@@ -183,8 +183,14 @@
 #firstrow {
   display: flex;
 }
+#firstrow a {
+  text-decoration: none;
+}
 #secondrow {
   display: flex;
+}
+#secondrow a {
+  text-decoration: none;
 }
 .product {
   background-color: rgb(226, 190, 255);
@@ -207,6 +213,7 @@
 .product-name {
   font-size: 1.5vw;
   text-align: center;
+  color: #000;
 }
 #page-5 {
   background-image: linear-gradient(
