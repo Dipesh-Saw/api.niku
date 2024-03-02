@@ -178,24 +178,31 @@
   /* background-color: aqua; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+#firstrow {
+  display: flex;
+}
+#secondrow {
+  display: flex;
 }
 .product {
   background-color: rgb(226, 190, 255);
-  /* margin: 1vw; */
+  margin: 1vw;
   padding: 1vw;
   border-radius: 5px;
 }
 .product:hover {
   transform: translateY(-1vw);
   transition: 0.5s;
-  box-shadow: 0 5px 3px black;
+  box-shadow: 0 5px 3px rgb(150, 149, 149);
 }
 .product-image {
   padding: 1vw;
 }
 .product-image img {
   width: 10vw;
+  border-radius: 50%;
 }
 .product-name {
   font-size: 1.5vw;
@@ -320,6 +327,18 @@
   border-radius: 20px;
   background-color: var(--bg);
 }
+#form-submit {
+  padding: 0.5vw;
+}
+#form-submit button {
+  padding: 0.7vw 1vw;
+  border-radius: 20px;
+  font-size: 1.2vw;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: rgb(156, 56, 249);
+}
 #footer {
   background-color: rgb(142, 72, 255);
   display: flex;
@@ -344,11 +363,12 @@
     width: 90%;
     padding-left: 5vw;
   }
-  #page-1-1 h1 {
-    font-size: 10vw;
+  #left-heading h1 {
+    font-size: 7vw;
   }
   #left-desc {
     width: 90%;
+    font-size: 4vw;
   }
   #page-1-1-right {
     width: 100%;
@@ -368,7 +388,7 @@
   }
   #page-2-heading {
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,7 +467,7 @@
     padding: 1vw;
   }
   #page-3-btns button {
-    padding: 3vw 1.5vw;
+    padding: 3vw 2vw;
     /* height: 7vw; */
     /* width: 8vw; */
     width: auto;
@@ -463,39 +483,49 @@
   #page-4 {
     padding: 5vw 0;
   }
+  #page-4-2 {
+    display: flex;
+    justify-content: center;
+  }
   #page-4-head {
     text-align: center;
     font-size: 3.5vw;
     padding: 2vw;
   }
   #page-4-card-section {
-    /* background-color: aqua; */
-    display: flex;
+    display: block;
+    text-align: center;
     align-items: center;
     justify-content: space-around;
   }
+  #firstrow {
+    display: flex;
+    justify-content: center;
+  }
+  #secondrow {
+    display: flex;
+    justify-content: center;
+  }
   .product {
     background-color: rgb(226, 190, 255);
-    /* margin: 1vw; */
     padding: 1vw;
+    margin: 2.5vw;
     border-radius: 5px;
-    width: 15vw;
-    height: 20vw;
   }
   .product:hover {
     transform: translateY(-1vw);
     transition: 0.5s;
-    box-shadow: 0 5px 3px black;
+    box-shadow: 0 5px 3px rgb(154, 154, 154);
   }
   .product-image {
     padding: 1vw;
     margin: 1vw;
   }
   .product-image img {
-    width: 10vw;
+    width: 20vw;
   }
   .product-name {
-    font-size: 2.3vw;
+    font-size: 4vw;
     text-align: center;
   }
   #page-5 {
@@ -525,7 +555,7 @@
     padding: 2vw 0;
     font-size: 4vw;
   }
-  #page-5-desc{
+  #page-5-desc {
     font-size: 4vw;
   }
   #page-5-btn {
@@ -539,33 +569,59 @@
   }
   #page-6 {
     padding: 3vw 0;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-around;
   }
   #page-6-left {
     width: 40%;
+    display: none;
   }
   #page-6-left img {
     width: 40vw;
   }
   #page-6-right {
-    width: 40%;
+    width: 100%;
     /* background-color: red; */
   }
   #page-6-head {
     /* background-color: blue; */
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
   }
   #page-6-head h1 {
     /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
+  #form {
+    justify-content: center;
+    display: flex;
+  }
   #form-top {
+    width: 60vw;
+  }
+  #form-top input {
     /* display: flex; */
+    font-size: 3vw;
     justify-content: space-between;
     padding: 2vw;
+  }
+  #form-top textarea {
+    font-size: 3vw;
+    border-radius: 2vw;
+    padding: 2vw;
+  }
+  /* #form-submit{
+    text-align: end;
+  } */
+  #form-submit button {
+    font-size: 2.5vw;
+    padding: 1.5vw 2vw;
+  }
+  svg {
+    width: 5vw;
+    height: 5vw;
+    padding: 1.3vw;
   }
   :root {
     --bg: #ecececea;
@@ -581,7 +637,9 @@
     font-size: 1.4vw;
     color: #fff;
     padding: 1vw;
-    width: 98%;
+    width: 100%;
+    font-size: 2.5vw;
+    padding: 2vw 0;
   }
   #footer a {
     color: #fff;
