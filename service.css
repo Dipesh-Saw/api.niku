@@ -249,6 +249,7 @@
   border-radius: 40px;
   outline: none;
   border: none;
+  font-size: 1vw;
 }
 #page-6 {
   padding: 3vw 0;
@@ -573,6 +574,7 @@
     border-radius: 40px;
     outline: none;
     border: none;
+    font-size: 3vw;
   }
   #page-6 {
     padding: 3vw 0;
