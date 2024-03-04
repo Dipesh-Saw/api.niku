@@ -245,6 +245,7 @@
   margin: 2vw 0;
 }
 #page-5-btn button {
+  cursor: pointer;
   padding: 0.8vw 1.5vw;
   border-radius: 40px;
   outline: none;
